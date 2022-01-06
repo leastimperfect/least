@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json.schemastore.org/theme-v1.json",
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
   "version": 1,
   "templateParts": [
     {
@@ -161,7 +161,7 @@
       ]
     },
     "layout": {
-      "contentSize": "720px",
+      "contentSize": "1000px",
       "wideSize": "1170px"
     }
   },

@@ -14,3 +14,10 @@ Text Domain: least
 Emptytheme WordPress Theme, (C) 2021 WordPress.org
 Emptytheme is distributed under the terms of the GNU GPL.
 */
+
+
+
+/* Helpers */
+.no-margin {
+    margin: 0;
+}
