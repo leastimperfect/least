@@ -1,11 +1,23 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
-<!-- wp:query {"queryId":1,"query":{"offset":0,"postType":"post","categoryIds":[],"tagIds":[],"order":"desc","orderBy":"date","author":"","search":"","sticky":""}} -->
-<!-- wp:post-template -->
-<!-- wp:post-title {"isLink":true} /-->
+<!-- wp:group {"tagName":"main","className":"not-found","layout":{"inherit":true}} -->
+<main class="wp-block-group not-found">
 
-<!-- wp:post-excerpt /-->
-<!-- /wp:post-template -->
-<!-- /wp:query -->
+	<!-- wp:spacer {"height":"11vh"} -->
+	<div style="height:11vh" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- /wp:spacer -->
+
+	<!-- wp:heading {"textAlign":"center","style":{"typography":{"fontSize":"90px","lineHeight":"1"}},"textColor":"rich-black"} -->
+	<h2 class="has-text-align-center has-rich-black-color has-text-color" style="font-size:90px;line-height:1">404</h2>
+	<!-- /wp:heading -->
+
+	<!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"fontSize":"45px","lineHeight":"1.4"}},"textColor":"rich-black"} -->
+	<h3 class="has-text-align-center has-rich-black-color has-text-color" style="font-size:45px;line-height:1.4">Page not found</h3>
+	<!-- /wp:heading -->
+
+	<!-- wp:paragraph {"align":"center"} -->
+	<p class="has-text-align-center">Something's wrong. We can't find the page you're looking.</p>
+	<!-- /wp:paragraph --></main>
+<!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
