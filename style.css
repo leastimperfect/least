@@ -21,3 +21,13 @@ Emptytheme is distributed under the terms of the GNU GPL.
 .no-margin {
     margin: 0;
 }
+
+
+/* Post Template */
+
+.remove-title h3 {
+    display: none;
+}
+.remove-comm-form .comment-respond {
+    display: none;
+}
