@@ -14,9 +14,12 @@ Least is a robust full site editing theme with a minimalist approach to maximise
 
 == Frequently Asked Questions ==
 
-= How to get started with full site editing? =
-
+= How to get started with FSE (Full Site Editing)? =
 You can look up some videos on YouTube. One of our favorites includes https://www.youtube.com/watch?v=AYFkcOkGymU.
+
+== Credits and Resources ==
+Documentation https://leastimperfect.com/least-theme-doc
+Write to us at wp@leastimperfect.com for further support.
 
 == Changelog ==
 
@@ -27,6 +30,3 @@ You can look up some videos on YouTube. One of our favorites includes https://ww
 
 = 0.1.0 =
 * Ready for the world
-
-== Resources ==
-
