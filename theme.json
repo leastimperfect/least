@@ -356,7 +356,6 @@
         "typography": {
           "fontFamily": "var(--wp--preset--font-family--headings)",
           "fontWeight": "normal",
-          "textTransform": "uppercase",
           "lineHeight": "var(--wp--custom--typography--line-height--normal)",
           "fontSize": "var(--wp--custom--typography--font-size--heading-5)"
         }
@@ -365,7 +364,6 @@
         "typography": {
           "fontFamily": "var(--wp--preset--font-family--headings)",
           "fontWeight": "normal",
-          "textTransform": "uppercase",
           "lineHeight": "var(--wp--custom--typography--line-height--normal)",
           "fontSize": "var(--wp--custom--typography--font-size--heading-6)"
         }
