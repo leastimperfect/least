@@ -1,19 +1,16 @@
-/* Error: Undefined variable.
- *    ,
- * 34 |   .br0 {        border-radius: $border-radius-none }
- *    |                                ^^^^^^^^^^^^^^^^^^^
- *    '
- *   scss/tachyons/_border-radius.scss 34:32  @import
- *   scss/tachyons/_index.scss 23:9           @import
- *   style.scss 18:9                          root stylesheet */
+/*!
+Theme Name: Least
+Theme URI: https://leastimperfect.com/least-theme
+Author: Least imperfect
+Description: Minimal block theme that does what it should.
+Requires at least: 5.3
+Tested up to: 5.5
+Requires PHP: 5.6
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: least
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 34 \2502    .br0 {        border-radius: $border-radius-none }\a    \2502                                 ^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss/tachyons/_border-radius.scss 34:32  @import\a   scss/tachyons/_index.scss 23:9           @import\a   style.scss 18:9                          root stylesheet";
-}
+Emptytheme WordPress Theme, (C) 2021 WordPress.org
+Emptytheme is distributed under the terms of the GNU GPL.
+*/.br0{border-radius:0}.br1{border-radius:.125rem}.br2{border-radius:.25rem}.br3{border-radius:.5rem}.br4{border-radius:1rem}.br-100{border-radius:100%}.br-pill{border-radius:9999px}.br--bottom{border-top-left-radius:0;border-top-right-radius:0}.br--top{border-bottom-left-radius:0;border-bottom-right-radius:0}.br--right{border-top-left-radius:0;border-bottom-left-radius:0}.br--left{border-top-right-radius:0;border-bottom-right-radius:0}.shadow-1{box-shadow:0px 0px 4px 2px rgba(0,0,0,.2)}.shadow-2{box-shadow:0px 0px 8px 2px rgba(0,0,0,.2)}.shadow-3{box-shadow:2px 2px 4px 2px rgba(0,0,0,.2)}.shadow-4{box-shadow:2px 2px 8px 0px rgba(0,0,0,.2)}.shadow-5{box-shadow:4px 4px 8px 0px rgba(0,0,0,.2)}.dim{opacity:1;transition:opacity .15s ease-in}.dim:hover,.dim:focus{opacity:.5;transition:opacity .15s ease-in}.dim:active{opacity:.8;transition:opacity .15s ease-out}.glow{transition:opacity .15s ease-in}.glow:hover,.glow:focus{opacity:1;transition:opacity .15s ease-in}.hide-child .child{opacity:0;transition:opacity .15s ease-in}.hide-child:hover .child,.hide-child:focus .child,.hide-child:active .child{opacity:1;transition:opacity .15s ease-in}.underline-hover:hover,.underline-hover:focus{text-decoration:underline}.grow{-moz-osx-font-smoothing:grayscale;backface-visibility:hidden;transform:translateZ(0);transition:transform .25s ease-out}.grow:hover,.grow:focus{transform:scale(1.05)}.grow:active{transform:scale(0.9)}.grow-large{-moz-osx-font-smoothing:grayscale;backface-visibility:hidden;transform:translateZ(0);transition:transform .25s ease-in-out}.grow-large:hover,.grow-large:focus{transform:scale(1.2)}.grow-large:active{transform:scale(0.95)}.pointer:hover{cursor:pointer}.shadow-hover{cursor:pointer;position:relative;transition:all .5s cubic-bezier(0.165, 0.84, 0.44, 1)}.shadow-hover::after{content:"";box-shadow:0px 0px 16px 2px rgba(0,0,0,.2);border-radius:inherit;opacity:0;position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1;transition:opacity .5s cubic-bezier(0.165, 0.84, 0.44, 1)}.shadow-hover:hover::after,.shadow-hover:focus::after{opacity:1}.bg-animate,.bg-animate:hover,.bg-animate:focus{transition:background-color .15s ease-in-out}.list{list-style-type:none}.o-100{opacity:1}.o-90{opacity:.9}.o-80{opacity:.8}.o-70{opacity:.7}.o-60{opacity:.6}.o-50{opacity:.5}.o-40{opacity:.4}.o-30{opacity:.3}.o-20{opacity:.2}.o-10{opacity:.1}.o-05{opacity:.05}.o-025{opacity:.025}.o-0{opacity:0}.wp-block-column p:first-child{margin-top:0}.wp-block-column p:last-child{margin-bottom:0}.remove-title h3{display:none}/*# sourceMappingURL=style.css.map */
