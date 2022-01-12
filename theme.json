@@ -4,38 +4,21 @@
   "templateParts": [
     {
       "name": "header",
-      "area": "header"
-    },
-    {
-      "name": "header-centered-logo",
-      "area": "header"
-    },
-    {
-      "name": "header-transparent",
+      "title": "Header",
       "area": "header"
     },
     {
       "name": "footer",
+      "title": "Footer",
       "area": "footer"
-    }
-  ],
-  "customTemplates": [
-    {
-      "name": "blank",
-      "title": "Blank",
-      "postTypes": ["page", "post"]
     },
     {
-      "name": "page-without-title",
-      "title": "Page Without Title",
-      "postTypes": ["page", "post"]
-    },
-    {
-      "name": "page-header-footer-only",
-      "title": "Header and Footer Only",
-      "postTypes": ["page", "post"]
+      "name": "archive-content",
+      "title": "Archive (multiple posts page) content",
+      "area": "blog-content"
     }
   ],
+  "customTemplates": [],
   "settings": {
     "color": {
       "link": true,
@@ -71,7 +54,13 @@
           "name": "Background Light"
         }
       ],
-      "gradients": []
+      "gradients": [
+        {
+          "slug": "off-white-gradient",
+          "gradient": "linear-gradient(to bottom, rgba(0,0,0,.05)  0%, rgba(0,0,0,0) 100%)",
+          "name": "Vertical secondary to tertiary"
+        }
+      ]
     },
     "custom": {
       "spacing": {
