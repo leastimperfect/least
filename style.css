@@ -13,4 +13,383 @@ Text Domain: least
 
 Emptytheme WordPress Theme, (C) 2021 WordPress.org
 Emptytheme is distributed under the terms of the GNU GPL.
-*/.br0{border-radius:0}.br1{border-radius:.125rem}.br2{border-radius:.25rem}.br3{border-radius:.5rem}.br4{border-radius:1rem}.br-100{border-radius:100%}.br-pill{border-radius:9999px}.br--bottom{border-top-left-radius:0;border-top-right-radius:0}.br--top{border-bottom-left-radius:0;border-bottom-right-radius:0}.br--right{border-top-left-radius:0;border-bottom-left-radius:0}.br--left{border-top-right-radius:0;border-bottom-right-radius:0}.shadow-1{box-shadow:0px 0px 4px 2px rgba(0,0,0,.2)}.shadow-2{box-shadow:0px 0px 8px 2px rgba(0,0,0,.2)}.shadow-3{box-shadow:2px 2px 4px 2px rgba(0,0,0,.2)}.shadow-4{box-shadow:2px 2px 8px 0px rgba(0,0,0,.2)}.shadow-5{box-shadow:4px 4px 8px 0px rgba(0,0,0,.2)}.dim{opacity:1;transition:opacity .15s ease-in}.dim:hover,.dim:focus{opacity:.5;transition:opacity .15s ease-in}.dim:active{opacity:.8;transition:opacity .15s ease-out}.glow{transition:opacity .15s ease-in}.glow:hover,.glow:focus{opacity:1;transition:opacity .15s ease-in}.hide-child .child{opacity:0;transition:opacity .15s ease-in}.hide-child:hover .child,.hide-child:focus .child,.hide-child:active .child{opacity:1;transition:opacity .15s ease-in}.underline-hover:hover,.underline-hover:focus{text-decoration:underline}.grow{-moz-osx-font-smoothing:grayscale;backface-visibility:hidden;transform:translateZ(0);transition:transform .25s ease-out}.grow:hover,.grow:focus{transform:scale(1.05)}.grow:active{transform:scale(0.9)}.grow-large{-moz-osx-font-smoothing:grayscale;backface-visibility:hidden;transform:translateZ(0);transition:transform .25s ease-in-out}.grow-large:hover,.grow-large:focus{transform:scale(1.2)}.grow-large:active{transform:scale(0.95)}.pointer:hover{cursor:pointer}.shadow-hover{cursor:pointer;position:relative;transition:all .5s cubic-bezier(0.165, 0.84, 0.44, 1)}.shadow-hover::after{content:"";box-shadow:0px 0px 16px 2px rgba(0,0,0,.2);border-radius:inherit;opacity:0;position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1;transition:opacity .5s cubic-bezier(0.165, 0.84, 0.44, 1)}.shadow-hover:hover::after,.shadow-hover:focus::after{opacity:1}.bg-animate,.bg-animate:hover,.bg-animate:focus{transition:background-color .15s ease-in-out}.list{list-style-type:none}.o-100{opacity:1}.o-90{opacity:.9}.o-80{opacity:.8}.o-70{opacity:.7}.o-60{opacity:.6}.o-50{opacity:.5}.o-40{opacity:.4}.o-30{opacity:.3}.o-20{opacity:.2}.o-10{opacity:.1}.o-05{opacity:.05}.o-025{opacity:.025}.o-0{opacity:0}.wp-block-column p:first-child{margin-top:0}.wp-block-column p:last-child{margin-bottom:0}.remove-title h3{display:none}/*# sourceMappingURL=style.css.map */
+*/
+/*
+
+   BORDER RADIUS
+   Docs: http://tachyons.io/docs/themes/border-radius/
+
+   Base:
+     br   = border-radius
+
+   Modifiers:
+     0    = 0/none
+     1    = 1st step in scale
+     2    = 2nd step in scale
+     3    = 3rd step in scale
+     4    = 4th step in scale
+
+   Literal values:
+     -100 = 100%
+     -pill = 9999px
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+.br0 {
+  border-radius: 0;
+}
+
+.br1 {
+  border-radius: 0.125rem;
+}
+
+.br2 {
+  border-radius: 0.25rem;
+}
+
+.br3 {
+  border-radius: 0.5rem;
+}
+
+.br4 {
+  border-radius: 1rem;
+}
+
+.br-100 {
+  border-radius: 100%;
+}
+
+.br-pill {
+  border-radius: 9999px;
+}
+
+.br--bottom {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.br--top {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.br--right {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.br--left {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/*
+
+  BOX-SHADOW
+  Docs: http://tachyons.io/docs/themes/box-shadow/
+
+  Media Query Extensions:
+   -ns = not-small
+   -m  = medium
+   -l  = large
+
+ */
+.shadow-1 {
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-2 {
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-3 {
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-4 {
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-5 {
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*
+
+  HOVER EFFECTS
+  Docs: http://tachyons.io/docs/themes/hovers/
+
+    - Dim
+    - Glow
+    - Hide Child
+    - Underline text
+    - Grow
+    - Pointer
+    - Shadow
+
+*/
+/*
+
+  Dim element on hover by adding the dim class.
+
+*/
+.dim {
+  opacity: 1;
+  transition: opacity 0.15s ease-in;
+}
+
+.dim:hover,
+.dim:focus {
+  opacity: 0.5;
+  transition: opacity 0.15s ease-in;
+}
+
+.dim:active {
+  opacity: 0.8;
+  transition: opacity 0.15s ease-out;
+}
+
+/*
+
+  Animate opacity to 100% on hover by adding the glow class.
+
+*/
+.glow {
+  transition: opacity 0.15s ease-in;
+}
+
+.glow:hover,
+.glow:focus {
+  opacity: 1;
+  transition: opacity 0.15s ease-in;
+}
+
+/*
+
+  Hide child & reveal on hover:
+
+  Put the hide-child class on a parent element and any nested element with the
+  child class will be hidden and displayed on hover or focus.
+
+  <div class="hide-child">
+    <div class="child"> Hidden until hover or focus </div>
+    <div class="child"> Hidden until hover or focus </div>
+    <div class="child"> Hidden until hover or focus </div>
+    <div class="child"> Hidden until hover or focus </div>
+  </div>
+*/
+.hide-child .child {
+  opacity: 0;
+  transition: opacity 0.15s ease-in;
+}
+
+.hide-child:hover .child,
+.hide-child:focus .child,
+.hide-child:active .child {
+  opacity: 1;
+  transition: opacity 0.15s ease-in;
+}
+
+.underline-hover:hover,
+.underline-hover:focus {
+  text-decoration: underline;
+}
+
+/* Can combine this with overflow-hidden to make background images grow on hover
+ * even if you are using background-size: cover */
+.grow {
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+}
+
+.grow:hover,
+.grow:focus {
+  transform: scale(1.05);
+}
+
+.grow:active {
+  transform: scale(0.9);
+}
+
+.grow-large {
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-in-out;
+}
+
+.grow-large:hover,
+.grow-large:focus {
+  transform: scale(1.2);
+}
+
+.grow-large:active {
+  transform: scale(0.95);
+}
+
+/* Add pointer on hover */
+.pointer:hover {
+  cursor: pointer;
+}
+
+/*
+   Add shadow on hover.
+
+   Performant box-shadow animation pattern from
+   http://tobiasahlin.com/blog/how-to-animate-box-shadow/
+*/
+.shadow-hover {
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.shadow-hover::after {
+  content: "";
+  box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.2);
+  border-radius: inherit;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: opacity 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.shadow-hover:hover::after,
+.shadow-hover:focus::after {
+  opacity: 1;
+}
+
+/* Combine with classes in skins and skins-pseudo for
+ * many different transition possibilities. */
+.bg-animate,
+.bg-animate:hover,
+.bg-animate:focus {
+  transition: background-color 0.15s ease-in-out;
+}
+
+/*
+
+   LISTS
+   http://tachyons.io/docs/elements/lists/
+
+*/
+.list {
+  list-style-type: none;
+}
+
+/*
+
+    OPACITY
+    Docs: http://tachyons.io/docs/themes/opacity/
+
+*/
+.o-100 {
+  opacity: 1;
+}
+
+.o-90 {
+  opacity: 0.9;
+}
+
+.o-80 {
+  opacity: 0.8;
+}
+
+.o-70 {
+  opacity: 0.7;
+}
+
+.o-60 {
+  opacity: 0.6;
+}
+
+.o-50 {
+  opacity: 0.5;
+}
+
+.o-40 {
+  opacity: 0.4;
+}
+
+.o-30 {
+  opacity: 0.3;
+}
+
+.o-20 {
+  opacity: 0.2;
+}
+
+.o-10 {
+  opacity: 0.1;
+}
+
+.o-05 {
+  opacity: 0.05;
+}
+
+.o-025 {
+  opacity: 0.025;
+}
+
+.o-0 {
+  opacity: 0;
+}
+
+/*
+
+  TEXT ALIGN
+  Docs: http://tachyons.io/docs/typography/text-align/
+
+  Base
+    t = text-align
+
+  Modifiers
+    l = left
+    r = right
+    c = center
+    j = justify
+
+  Media Query Extensions:
+    -ns = not-small
+    -m  = medium
+    -l  = large
+
+*/
+.tl {
+  text-align: left;
+}
+
+.tr {
+  text-align: right;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tj {
+  text-align: justify;
+}
+
+.wp-block-column p:first-child {
+  margin-top: 0;
+}
+.wp-block-column p:last-child {
+  margin-bottom: 0;
+}
+
+.remove-title h3 {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

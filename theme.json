@@ -150,8 +150,9 @@
       ]
     },
     "layout": {
-      "contentSize": "1000px",
-      "wideSize": "1170px"
+      "contentSize": "min( calc(100vw - 2rem), 80rem)",
+			"wideSize": "min( calc(100vw - 2rem), 90rem)",
+			"outerPadding": "0.5rem"
     }
   },
   "styles": {
