@@ -13,4 +13,21 @@ Text Domain: least
 
 Emptytheme WordPress Theme, (C) 2021 WordPress.org
 Emptytheme is distributed under the terms of the GNU GPL.
-*/.wp-block-column p:first-child{margin-top:0}.wp-block-column p:last-child{margin-bottom:0}.remove-title h3{display:none}/*# sourceMappingURL=style.css.map */
+*/
+
+/* Helpers */
+
+// Vertical alignment breaks in columns if paragraphs have margin.
+.wp-block-column p{
+	&:first-child {
+		margin-top: 0;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.remove-title h3 {
+	display: none;
+}
