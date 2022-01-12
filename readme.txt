@@ -18,6 +18,12 @@ Least is a robust full site editing theme with a minimalist approach to maximise
 You can look up some videos on YouTube. One of our favorites includes https://www.youtube.com/watch?v=AYFkcOkGymU.
 
 == Credits and Resources ==
+TACHYONS v4.12.0
+MIT License | http://tachyons.io
+
+normalize.css v8.0.0
+MIT License | github.com/necolas/normalize.css
+
 Documentation https://leastimperfect.com/least-theme-doc
 Write to us at wp@leastimperfect.com for further support.
 

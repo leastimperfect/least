@@ -1,16 +1,19 @@
-/*!
-Theme Name: Least
-Theme URI: https://leastimperfect.com/least-theme
-Author: Least imperfect
-Description: Minimal block theme that does what it should.
-Requires at least: 5.3
-Tested up to: 5.5
-Requires PHP: 5.6
-Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: least
+/* Error: Undefined variable.
+ *    ,
+ * 34 |   .br0 {        border-radius: $border-radius-none }
+ *    |                                ^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   scss/tachyons/_border-radius.scss 34:32  @import
+ *   scss/tachyons/_index.scss 23:9           @import
+ *   style.scss 18:9                          root stylesheet */
 
-Emptytheme WordPress Theme, (C) 2021 WordPress.org
-Emptytheme is distributed under the terms of the GNU GPL.
-*/.wp-block-column p:first-child{margin-top:0}.wp-block-column p:last-child{margin-bottom:0}.remove-title h3{display:none}/*# sourceMappingURL=style.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 34 \2502    .br0 {        border-radius: $border-radius-none }\a    \2502                                 ^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss/tachyons/_border-radius.scss 34:32  @import\a   scss/tachyons/_index.scss 23:9           @import\a   style.scss 18:9                          root stylesheet";
+}
