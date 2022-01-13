@@ -14,31 +14,6 @@ Text Domain: least
 Emptytheme WordPress Theme, (C) 2021 WordPress.org
 Emptytheme is distributed under the terms of the GNU GPL.
 */
-/*
-
-   BORDER RADIUS
-   Docs: http://tachyons.io/docs/themes/border-radius/
-
-   Base:
-     br   = border-radius
-
-   Modifiers:
-     0    = 0/none
-     1    = 1st step in scale
-     2    = 2nd step in scale
-     3    = 3rd step in scale
-     4    = 4th step in scale
-
-   Literal values:
-     -100 = 100%
-     -pill = 9999px
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
 .br0 {
   border-radius: 0;
 }
@@ -87,19 +62,8 @@ Emptytheme is distributed under the terms of the GNU GPL.
   border-bottom-right-radius: 0;
 }
 
-/*
-
-  BOX-SHADOW
-  Docs: http://tachyons.io/docs/themes/box-shadow/
-
-  Media Query Extensions:
-   -ns = not-small
-   -m  = medium
-   -l  = large
-
- */
 .shadow-1 {
-  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.14);
 }
 
 .shadow-2 {
@@ -118,25 +82,6 @@ Emptytheme is distributed under the terms of the GNU GPL.
   box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
-/*
-
-  HOVER EFFECTS
-  Docs: http://tachyons.io/docs/themes/hovers/
-
-    - Dim
-    - Glow
-    - Hide Child
-    - Underline text
-    - Grow
-    - Pointer
-    - Shadow
-
-*/
-/*
-
-  Dim element on hover by adding the dim class.
-
-*/
 .dim {
   opacity: 1;
   transition: opacity 0.15s ease-in;
@@ -153,11 +98,6 @@ Emptytheme is distributed under the terms of the GNU GPL.
   transition: opacity 0.15s ease-out;
 }
 
-/*
-
-  Animate opacity to 100% on hover by adding the glow class.
-
-*/
 .glow {
   transition: opacity 0.15s ease-in;
 }
@@ -168,20 +108,6 @@ Emptytheme is distributed under the terms of the GNU GPL.
   transition: opacity 0.15s ease-in;
 }
 
-/*
-
-  Hide child & reveal on hover:
-
-  Put the hide-child class on a parent element and any nested element with the
-  child class will be hidden and displayed on hover or focus.
-
-  <div class="hide-child">
-    <div class="child"> Hidden until hover or focus </div>
-    <div class="child"> Hidden until hover or focus </div>
-    <div class="child"> Hidden until hover or focus </div>
-    <div class="child"> Hidden until hover or focus </div>
-  </div>
-*/
 .hide-child .child {
   opacity: 0;
   transition: opacity 0.15s ease-in;
@@ -199,8 +125,6 @@ Emptytheme is distributed under the terms of the GNU GPL.
   text-decoration: underline;
 }
 
-/* Can combine this with overflow-hidden to make background images grow on hover
- * even if you are using background-size: cover */
 .grow {
   -moz-osx-font-smoothing: grayscale;
   backface-visibility: hidden;
@@ -233,17 +157,10 @@ Emptytheme is distributed under the terms of the GNU GPL.
   transform: scale(0.95);
 }
 
-/* Add pointer on hover */
 .pointer:hover {
   cursor: pointer;
 }
 
-/*
-   Add shadow on hover.
-
-   Performant box-shadow animation pattern from
-   http://tobiasahlin.com/blog/how-to-animate-box-shadow/
-*/
 .shadow-hover {
   cursor: pointer;
   position: relative;
@@ -269,30 +186,10 @@ Emptytheme is distributed under the terms of the GNU GPL.
   opacity: 1;
 }
 
-/* Combine with classes in skins and skins-pseudo for
- * many different transition possibilities. */
-.bg-animate,
-.bg-animate:hover,
-.bg-animate:focus {
-  transition: background-color 0.15s ease-in-out;
-}
-
-/*
-
-   LISTS
-   http://tachyons.io/docs/elements/lists/
-
-*/
 .list {
   list-style-type: none;
 }
 
-/*
-
-    OPACITY
-    Docs: http://tachyons.io/docs/themes/opacity/
-
-*/
 .o-100 {
   opacity: 1;
 }
@@ -345,26 +242,6 @@ Emptytheme is distributed under the terms of the GNU GPL.
   opacity: 0;
 }
 
-/*
-
-  TEXT ALIGN
-  Docs: http://tachyons.io/docs/typography/text-align/
-
-  Base
-    t = text-align
-
-  Modifiers
-    l = left
-    r = right
-    c = center
-    j = justify
-
-  Media Query Extensions:
-    -ns = not-small
-    -m  = medium
-    -l  = large
-
-*/
 .tl {
   text-align: left;
 }
@@ -381,10 +258,86 @@ Emptytheme is distributed under the terms of the GNU GPL.
   text-align: justify;
 }
 
-.wp-block-column p:first-child {
+.wp-block-post-template,
+.wp-block-query-loop {
+  list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  max-width: 100%;
+  padding: 0;
+}
+.wp-block-post-template li,
+.wp-block-query-loop li {
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.14);
+  border-radius: inherit;
+}
+.wp-block-post-template li .wp-block-post-excerpt__excerpt,
+.wp-block-query-loop li .wp-block-post-excerpt__excerpt {
+  max-height: calc(3em * var(--wp--custom--typography--line-height--normal));
+  overflow: hidden;
+}
+.wp-block-post-template li > *,
+.wp-block-post-template li > section > *,
+.wp-block-query-loop li > *,
+.wp-block-query-loop li > section > * {
+  --tile-items-gap: calc(var(--wp--style--block-gap) / 2);
+  margin: var(--tile-items-gap);
+}
+.wp-block-post-template li > section,
+.wp-block-query-loop li > section {
+  margin: 0;
+}
+.wp-block-post-template li figure,
+.wp-block-query-loop li figure {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  overflow: hidden;
+  margin: 0;
+}
+.wp-block-post-template.is-flex-container,
+.wp-block-query-loop.is-flex-container {
+  display: -ms-grid;
+  display: -moz-grid;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: var(--wp--style--block-gap);
+}
+.wp-block-post-template.is-flex-container li,
+.wp-block-query-loop.is-flex-container li {
+  margin: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 30em) {
+  .wp-block-post-template.is-flex-container.columns-1,
+.wp-block-query-loop.is-flex-container.columns-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .wp-block-post-template.is-flex-container.columns-2,
+.wp-block-query-loop.is-flex-container.columns-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .wp-block-post-template.is-flex-container.columns-3,
+.wp-block-query-loop.is-flex-container.columns-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .wp-block-post-template.is-flex-container.columns-4,
+.wp-block-query-loop.is-flex-container.columns-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .wp-block-post-template.is-flex-container.columns-5,
+.wp-block-query-loop.is-flex-container.columns-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .wp-block-post-template.is-flex-container.columns-6,
+.wp-block-query-loop.is-flex-container.columns-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+p:first-child {
   margin-top: 0;
 }
-.wp-block-column p:last-child {
+p:last-child {
   margin-bottom: 0;
 }
 

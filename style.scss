@@ -15,10 +15,12 @@ Emptytheme WordPress Theme, (C) 2021 WordPress.org
 Emptytheme is distributed under the terms of the GNU GPL.
 */
 
+@import 'scss/vars';
 @import 'scss/tachyons';
+@import 'scss/archive';
 
 // Vertical alignment breaks in columns if paragraphs have margin.
-.wp-block-column p{
+p{
 	&:first-child {
 		margin-top: 0;
 	}
@@ -26,7 +28,7 @@ Emptytheme is distributed under the terms of the GNU GPL.
 	&:last-child {
 		margin-bottom: 0;
 	}
-} 
+}
 
 .remove-title h3 {
 	display: none;

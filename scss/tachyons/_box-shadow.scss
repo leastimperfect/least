@@ -5,17 +5,13 @@
 // Custom Media Query Variables
 
 
-/*
-
-  BOX-SHADOW
-  Docs: http://tachyons.io/docs/themes/box-shadow/
-
-  Media Query Extensions:
-   -ns = not-small
-   -m  = medium
-   -l  = large
-
- */
+// BOX-SHADOW
+// Docs: http://tachyons.io/docs/themes/box-shadow/
+//
+// Media Query Extensions:
+//  -ns = not-small
+//  -m  = medium
+//  -l  = large
 
 .shadow-1 { box-shadow: $box-shadow-1; }
 .shadow-2 { box-shadow: $box-shadow-2; }

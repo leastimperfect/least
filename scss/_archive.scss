@@ -1,0 +1,62 @@
+// Replaces wp-block-post-template styles to use grid
+.wp-block-post-template,
+.wp-block-query-loop {
+	list-style: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	max-width: 100%;
+	padding: 0;
+
+	li {
+		box-shadow: $box-shadow-1;
+		border-radius: inherit;
+
+		.wp-block-post-excerpt__excerpt {
+			max-height: calc(3em * var(--wp--custom--typography--line-height--normal));
+			overflow: hidden;
+		}
+
+		> *,
+		> section > * {
+			--tile-items-gap: calc(var(--wp--style--block-gap) / 2);
+			margin: var(--tile-items-gap);
+		}
+
+		> section {
+			margin: 0;
+		}
+
+		figure {
+			border-top-left-radius: inherit;
+			border-top-right-radius: inherit;
+			overflow: hidden;
+			margin: 0;
+		}
+	}
+
+	&.is-flex-container {
+		display: -ms-grid;
+		display: -moz-grid;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: var(--wp--style--block-gap);
+
+		li {
+			margin: 0;
+			width: 100%;
+		}
+	}
+}
+
+@media #{$breakpoint-not-small} {
+	.wp-block-post-template,
+	.wp-block-query-loop {
+		&.is-flex-container {
+			@for $col from 1 through 6 {
+				&.columns-#{$col} {
+					grid-template-columns: repeat(#{$col}, 1fr);
+				}
+			}
+		}
+	}
+}

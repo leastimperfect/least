@@ -4,27 +4,18 @@
 
 // Custom Media Query Variables
 
+// HOVER EFFECTS
+// Docs: http://tachyons.io/docs/themes/hovers/
 
-/*
+//   - Dim
+//   - Glow
+//   - Hide Child
+//   - Underline text
+//   - Grow
+//   - Pointer
+//   - Shadow
 
-  HOVER EFFECTS
-  Docs: http://tachyons.io/docs/themes/hovers/
-
-    - Dim
-    - Glow
-    - Hide Child
-    - Underline text
-    - Grow
-    - Pointer
-    - Shadow
-
-*/
-
-/*
-
-  Dim element on hover by adding the dim class.
-
-*/
+//  Dim element on hover by adding the dim class.
 .dim {
   opacity: 1;
   transition: opacity .15s ease-in;
@@ -38,11 +29,7 @@
   opacity: .8; transition: opacity .15s ease-out;
 }
 
-/*
-
-  Animate opacity to 100% on hover by adding the glow class.
-
-*/
+// Animate opacity to 100% on hover by adding the glow class.
 .glow {
   transition: opacity .15s ease-in;
 }
@@ -52,20 +39,17 @@
   transition: opacity .15s ease-in;
 }
 
-/*
+// Hide child & reveal on hover:
 
-  Hide child & reveal on hover:
+// Put the hide-child class on a parent element and any nested element with the
+// child class will be hidden and displayed on hover or focus.
 
-  Put the hide-child class on a parent element and any nested element with the
-  child class will be hidden and displayed on hover or focus.
-
-  <div class="hide-child">
-    <div class="child"> Hidden until hover or focus </div>
-    <div class="child"> Hidden until hover or focus </div>
-    <div class="child"> Hidden until hover or focus </div>
-    <div class="child"> Hidden until hover or focus </div>
-  </div>
-*/
+// <div class="hide-child">
+//   <div class="child"> Hidden until hover or focus </div>
+//   <div class="child"> Hidden until hover or focus </div>
+//   <div class="child"> Hidden until hover or focus </div>
+//   <div class="child"> Hidden until hover or focus </div>
+// </div>
 
 .hide-child .child {
   opacity: 0;
@@ -83,8 +67,8 @@
   text-decoration: underline;
 }
 
-/* Can combine this with overflow-hidden to make background images grow on hover
- * even if you are using background-size: cover */
+// Can combine this with overflow-hidden to make background images grow on hover
+// even if you are using background-size: cover
 
 .grow {
   -moz-osx-font-smoothing: grayscale;
@@ -118,18 +102,16 @@
   transform: scale(.95);
 }
 
-/* Add pointer on hover */
+// Add pointer on hover
 
 .pointer:hover {
   cursor: pointer;
 }
 
-/*
-   Add shadow on hover.
+// Add shadow on hover.
 
-   Performant box-shadow animation pattern from
-   http://tobiasahlin.com/blog/how-to-animate-box-shadow/
-*/
+// Performant box-shadow animation pattern from
+// http://tobiasahlin.com/blog/how-to-animate-box-shadow/
 
 .shadow-hover {
   cursor: pointer;
@@ -154,13 +136,4 @@
 .shadow-hover:hover::after,
 .shadow-hover:focus::after {
   opacity: 1;
-}
-
-/* Combine with classes in skins and skins-pseudo for
- * many different transition possibilities. */
-
-.bg-animate,
-.bg-animate:hover,
-.bg-animate:focus {
-  transition: background-color .15s ease-in-out;
 }
