@@ -150,9 +150,8 @@
       ]
     },
     "layout": {
-      "contentSize": "min( calc(100vw - 2rem), 80rem)",
-			"wideSize": "min( calc(100vw - 2rem), 90rem)",
-			"outerPadding": "0.5rem"
+      "contentSize": "min( calc(100vw - 3rem), 80rem)",
+      "wideSize": "min( calc(100vw - 3rem), 90rem)"
     }
   },
   "styles": {
