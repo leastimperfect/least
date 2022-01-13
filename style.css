@@ -14,6 +14,10 @@ Text Domain: least
 Emptytheme WordPress Theme, (C) 2021 WordPress.org
 Emptytheme is distributed under the terms of the GNU GPL.
 */
+body {
+  --least-tile-items-gap: calc(var(--wp--style--block-gap) / 2);
+}
+
 .br0 {
   border-radius: 0;
 }
@@ -271,17 +275,11 @@ Emptytheme is distributed under the terms of the GNU GPL.
   box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.14);
   border-radius: inherit;
 }
-.wp-block-post-template li .wp-block-post-excerpt__excerpt,
-.wp-block-query-loop li .wp-block-post-excerpt__excerpt {
-  max-height: calc(3em * var(--wp--custom--typography--line-height--normal));
-  overflow: hidden;
-}
 .wp-block-post-template li > *,
 .wp-block-post-template li > section > *,
 .wp-block-query-loop li > *,
 .wp-block-query-loop li > section > * {
-  --tile-items-gap: calc(var(--wp--style--block-gap) / 2);
-  margin: var(--tile-items-gap);
+  margin: var(--least-tile-items-gap);
 }
 .wp-block-post-template li > section,
 .wp-block-query-loop li > section {
@@ -308,11 +306,25 @@ Emptytheme is distributed under the terms of the GNU GPL.
   width: 100%;
 }
 
-@media screen and (min-width: 30em) {
-  .wp-block-post-template.is-flex-container.columns-1,
-.wp-block-query-loop.is-flex-container.columns-1 {
-    grid-template-columns: repeat(1, 1fr);
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .wp-block-post-template.is-flex-container.columns-3,
+.wp-block-query-loop.is-flex-container.columns-3 {
+    grid-template-columns: repeat(2, 1fr);
   }
+  .wp-block-post-template.is-flex-container.columns-4,
+.wp-block-query-loop.is-flex-container.columns-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .wp-block-post-template.is-flex-container.columns-5,
+.wp-block-query-loop.is-flex-container.columns-5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .wp-block-post-template.is-flex-container.columns-6,
+.wp-block-query-loop.is-flex-container.columns-6 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 60em) {
   .wp-block-post-template.is-flex-container.columns-2,
 .wp-block-query-loop.is-flex-container.columns-2 {
     grid-template-columns: repeat(2, 1fr);

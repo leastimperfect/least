@@ -11,15 +11,11 @@
 		box-shadow: $box-shadow-1;
 		border-radius: inherit;
 
-		.wp-block-post-excerpt__excerpt {
-			max-height: calc(3em * var(--wp--custom--typography--line-height--normal));
-			overflow: hidden;
-		}
+		.wp-block-post-excerpt__excerpt {}
 
 		> *,
 		> section > * {
-			--tile-items-gap: calc(var(--wp--style--block-gap) / 2);
-			margin: var(--tile-items-gap);
+			margin: var(--least-tile-items-gap);
 		}
 
 		> section {
@@ -48,11 +44,24 @@
 	}
 }
 
-@media #{$breakpoint-not-small} {
+@media #{$breakpoint-medium} {
 	.wp-block-post-template,
 	.wp-block-query-loop {
 		&.is-flex-container {
-			@for $col from 1 through 6 {
+			@for $col from 3 through 6 {
+				&.columns-#{$col} {
+					grid-template-columns: repeat(#{round($col/2)}, 1fr);
+				}
+			}
+		}
+	}
+}
+
+@media #{$breakpoint-large} {
+	.wp-block-post-template,
+	.wp-block-query-loop {
+		&.is-flex-container {
+			@for $col from 2 through 6 {
 				&.columns-#{$col} {
 					grid-template-columns: repeat(#{$col}, 1fr);
 				}

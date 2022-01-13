@@ -3,3 +3,11 @@ $box-shadow-2: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 );
 $box-shadow-3: 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 );
 $box-shadow-4: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 );
 $box-shadow-5: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 );
+
+$breakpoint-not-small: 'screen and (min-width: 30em)';
+$breakpoint-medium: 'screen and (min-width: 30em) and (max-width: 60em)';
+$breakpoint-large: 'screen and (min-width: 60em)';
+
+body {
+	--least-tile-items-gap: calc(var(--wp--style--block-gap) / 2);
+}
