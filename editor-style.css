@@ -1,0 +1,10 @@
+.wp-block-post-template.is-flex-container.is-flex-container > li {
+  width: auto;
+}
+
+.wp-block-post-template li > section > .wp-block > figure {
+  margin: calc( -1 * var(--least-tile-items-gap) );
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=editor-style.css.map */

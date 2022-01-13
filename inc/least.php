@@ -56,6 +56,7 @@ class Least {
 
 		// Enqueue editor styles.
 		add_editor_style( 'style.css' );
+		add_editor_style( 'editor-style.css' );
 	}
 
 	/**
