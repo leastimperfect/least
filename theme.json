@@ -18,7 +18,13 @@
 			"area": "blog-content"
 		}
 	],
-	"customTemplates": [],
+	"customTemplates": [
+		{
+			"name": "page-flushed",
+			"title": "Flushed to header and footer",
+			"postTypes": [ "page" ]
+		}
+	],
 	"settings": {
 		"color": {
 			"link": true,

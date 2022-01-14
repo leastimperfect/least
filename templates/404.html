@@ -1,4 +1,4 @@
-<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+<!-- wp:template-part {"slug":"header","tagName":"header","area":"header"} /-->
 
 <!-- wp:group {"tagName":"main","className":"not-found","layout":{"inherit":true}} -->
 <main class="wp-block-group not-found">
@@ -17,7 +17,13 @@
 
 	<!-- wp:paragraph {"align":"center"} -->
 	<p class="has-text-align-center">Something's wrong. We can't find the page you're looking.</p>
-	<!-- /wp:paragraph --></main>
+	<!-- /wp:paragraph -->
+
+	<!-- wp:spacer {"height":"11vh"} -->
+	<div style="height:11vh" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- /wp:spacer -->
+</main>
+
 <!-- /wp:group -->
 
-<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
+<!-- wp:template-part {"slug":"footer","tagName":"footer", "area":"footer"} /-->

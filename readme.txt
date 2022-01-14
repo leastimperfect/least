@@ -10,6 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Minimal Full-Site Editing Theme.
 
 == Description ==
+
 Least is a robust full site editing theme with a minimalist approach to maximise site-speed.
 
 == Frequently Asked Questions ==
@@ -18,6 +19,7 @@ Least is a robust full site editing theme with a minimalist approach to maximise
 You can look up some videos on YouTube. One of our favorites includes https://www.youtube.com/watch?v=AYFkcOkGymU.
 
 == Credits and Resources ==
+
 TACHYONS v4.12.0
 MIT License | http://tachyons.io
 
