@@ -18,16 +18,21 @@ Emptytheme is distributed under the terms of the GNU GPL.
 @import 'scss/vars';
 @import 'scss/tachyons';
 @import 'scss/archive';
+@import 'scss/footer';
 
 // Vertical alignment breaks in columns if paragraphs have margin.
-p{
-	&:first-child {
+.wp-block-column {
+	> :first-child {
 		margin-top: 0;
 	}
 
-	&:last-child {
+	> :last-child {
 		margin-bottom: 0;
 	}
+}
+
+.no-margin {
+	margin: 0;
 }
 
 .remove-title h3 {
