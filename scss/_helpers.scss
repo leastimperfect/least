@@ -1,0 +1,44 @@
+.entry-content {
+    content: "";
+    clear: both;
+    display: table;
+    margin: auto;
+}
+
+.wp-caption.alignright, .entry-content .alignright {
+    float: right;
+    margin: 1.5em 0 1.5em 1.5em !important;
+}
+
+.wp-caption.alignleft, .entry-content .alignleft {
+    float: left;
+    margin: 1.5em 1.5em 1.5em 0 !important;
+}
+
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+//
+// .wp-block-post.tag-sticky-2 {
+//     order: 1;
+// }
+
+.wp-block-post {
+    order: 2 ;
+}
+
+.no-margin {
+	margin: 0;
+}
+
+.remove-title h3 {
+	display: none;
+}
