@@ -10,6 +10,7 @@ Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: least
+Tags: one-column, editor-style, custom-logo, custom-menu, featured-images, full-site-editing, translation-ready, threaded
 
 Emptytheme WordPress Theme, (C) 2021 WordPress.org
 Emptytheme is distributed under the terms of the GNU GPL.
@@ -366,14 +367,14 @@ img {
 }
 .wp-block-query-pagination > a,
 .wp-block-query-pagination .page-numbers {
-  height: calc(var(--wp--preset--font-size--normal) * 2);
-  line-height: calc(var(--wp--preset--font-size--normal) * 2);
+  height: calc( var(--wp--preset--font-size--normal) * 2 );
+  line-height: calc( var(--wp--preset--font-size--normal) * 2 );
   display: inline-block;
   text-align: center;
   border: 1px solid;
   border-radius: 0.125rem;
   text-decoration: none;
-  width: calc(var(--wp--preset--font-size--normal) * 2);
+  width: calc( var(--wp--preset--font-size--normal) * 2 );
 }
 .wp-block-query-pagination .page-numbers.current {
   background: rgba(0, 0, 0, 0.1);
@@ -423,7 +424,7 @@ img {
   }
 }
 footer.wp-block-template-part .wp-block-navigation__container {
-  gap: calc(var(--wp--style--block-gap) / 2);
+  gap: calc( var( --wp--style--block-gap ) / 2 );
 }
 
 .wp-block-column > :first-child {

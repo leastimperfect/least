@@ -1,6 +1,6 @@
 === Least ===
 Contributors: shramee
-Tags: one-column, two-column, editor-style, custom-logo, custom-menu, featured-images, full-site-editing, translation-ready, threaded
+Tags: one-column, editor-style, custom-logo, custom-menu, featured-images, full-site-editing, translation-ready, threaded
 Requires at least: 5.8
 Tested up to: 5.9-beta1
 Stable tag: 0.1.0
