@@ -19,7 +19,9 @@ class Least {
 		$this->block_hooks();
 		add_action( 'after_setup_theme', array( $this, 'support' ) );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue' ) );
-// Changing excerpt more
+		add_filter( 'pre_get_posts', array( $this, 'pre_get_posts' ) );
+
+		// Excerpt tweaks
 		add_filter( 'excerpt_more', array( $this, 'excerpt_more' ) );
 		add_filter( 'excerpt_length', array( $this, 'excerpt_length' ) );
 	}
@@ -30,6 +32,7 @@ class Least {
 	 */
 	private function block_hooks() {
 		$blk = Least_Blocks::instance();
+		$blk->register_patterns();
 		add_filter( 'default_wp_template_part_areas', array( $blk, 'template_part_areas' ) );
 		add_action( 'wp_head', array( $blk, 'before_maybe_inline_styles' ), 0 );
 	}
@@ -69,11 +72,22 @@ class Least {
 	}
 
 	/**
+	 * @param WP_Query $query
+	 */
+	public function pre_get_posts( $query ) {
+		if ( $query->is_main_query() ) {
+			$post_archive = $query->is_archive() || $query->is_home() || $query->is_search();
+			if ( $post_archive ) {
+				$query->set( 'posts_per_page', 12 );
+			}
+		}
+	}
+
+	/**
 	 * Adds read more link
-	 * @param int $count
 	 * @return string
 	 */
-	public function excerpt_length( $count ) {
+	public function excerpt_length() {
 		return 25;
 	}
 
